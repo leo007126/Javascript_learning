@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order with Tax</title>
+</head>
+<body>
+
+  <button onclick="
+    totalCost += 5; 
+    console.log(`Added Coffee $5 | Total: $${totalCost.toFixed(2)}`); 
+    if (totalCost > 10 ){
+      
+    }
+  ">
+    Coffee: ($5)
+  </button>
+
+  <button onclick="
+    totalCost += 3; 
+    console.log(`Added Bagels $3 | Total: $${totalCost.toFixed(2)}`); 
+  ">
+    Bagels: ($3)
+  </button>
+
+  <button onclick="
+    totalCost += 9; 
+    console.log(`Added Soup $9 | Total: $${totalCost.toFixed(2)}`); 
+  ">
+    Soup: ($9)
+  </button>
+
+  <button onclick="
+    let tax = totalCost * 0.10;
+    let finalCost = totalCost + tax;
+    console.log(`Tax rate (10%): $${tax.toFixed(2)}`);
+    console.log(`Final Cost: $${finalCost.toFixed(2)}`);
+  ">
+    Show Total Cost
+  </button>
+
+  <button onclick="
+    let addQuantity = 4;
+    totalCost *= addQuantity;
+    addQuantity += totalCost;
+    console.log (`+4 Quantity: $${totalCost}`); 
+    
+    
+  ">
+    +4
+  </button>
+
+  <button onclick=" 
+    addQuantity = 5;
+    totalCost *= addQuantity;
+    addQuantity += totalCost;
+    console.log (`+4 Quantity: $${totalCost}`);
+  ">
+    +5
+  </button><br>
+
+  <button onclick="
+    totalCost --;
+    
+    console.log (`Remove 1 quantity: $${totalCost}`);
+  ">
+     Remove 1 quantity
+  </button>
+
+  <button onclick="
+     totalCost -= 2;
+     console.log (`Remove 2 quantity: $${totalCost}`);
+  ">
+    -2
+  </button>
+
+  <button onclick="
+    totalCost -= 3;
+    console.log (`Remove 3 Quantity : $${totalCost}`);
+  ">
+    -3
+  </button>
+
+  <script>
+    let totalCost = 0;
+  </script>
+</body>
+</html>

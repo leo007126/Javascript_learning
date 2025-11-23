@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="
+    
+    totalCost += 5;
+    console.log (`Coffee ($5) Total Cost: $${totalCost}`);
+  ">
+    Coffee ($5)
+  </button><br>
+
+  <button onclick="
+    totalCost += 5;
+    addQuantity += 1;
+    console.log (`Quantity: ${addQuantity}`);
+    console.log (`Coffee ($5) Total Cost: $${totalCost}`);
+    if (addQuantity > 10 ){
+      console.log ('The cart is full.');
+    }
+      
+  ">
+    Add Quantity
+  </button>
+
+  <button>
+    Remove 1 Quantity
+  </button>
+  
+</body>
+<script>
+/*let hour = 1;
+let name ='KINGINA MO KA !'
+if(hour >= 6 && hour < 12 ){
+  console.log (`Good Morning! ${name}`);
+}
+else if (hour >=13 && hour < 17){
+  console.log(`Good Afternoon! ${name}`);
+}
+else{
+  console.log (`Good Night! ${name}`);
+}
+*/
+let age = 69;
+const isHoliday = '';
+if ((age <=6  || age >= 65) && isHoliday ){
+  console.log ('Discount');
+}
+else {
+  console.log ('No Discount');
+}
+let totalCost = 0;
+let addQuantity = 0;
+</script>
+</html>

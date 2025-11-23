@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heads and Tails</title>
+</head>
+<body>
+  <button onclick="
+    let randomNumber = Math.random();
+    let computerMove = '';
+    let result = '';
+    if(randomNumber >= 0.5){
+      computerMove = 'Heads';
+    }
+      else {
+        computerMove = 'Tails';
+      }
+
+    if(computerMove === 'Heads'){
+      result = 'You are win.';
+    }
+    else if (computerMove === 'Tails'){
+      result = 'You are lose.';
+    }
+      alert(`You picked Heads. Computer picked. ${computerMove} ${result}`);
+  ">
+    Head
+  </button>
+
+  <button onclick="
+    let randomNumber1 = Math.random();
+    let guess = '';
+    let result1 = '';
+
+    if(randomNumber1 > 0.5){
+      guess = 'Heads';
+    }
+      else {
+        guess = 'Tails';
+      }
+
+    if (guess === 'Heads'){
+      result = 'You lose.';
+    }
+      else {
+        result = 'You win.';
+      }
+
+      alert(`You picked Tails Computer picked ${guess} ${result}`);
+  ">
+    Tails
+  </button>
+<script>
+  
+</script>  
+</body>
+</html>
